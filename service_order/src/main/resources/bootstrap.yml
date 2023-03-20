@@ -1,0 +1,50 @@
+server:
+  port: ${port:9004}
+spring:
+  application:
+    name: orderserver
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 201014
+      url: jdbc:mysql://127.0.0.1:3306/yt_hosp?characterEncoding=UTF-8&serverTimezone=GMT%2B8
+      filters: stat,wall
+      stat-view-servlet:
+        enabled: true
+        login-username: xzp
+        login-password: 201014
+        web-stat-filter:
+          enabled: true
+          url-pattern: /*
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 64c31488-1828-4537-99a1-29fd7d9401c7
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: assign_id
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/xzp/mapper/xml/*.xml
+hosp:
+  requestUrl:
+    baseUrl: http://127.0.0.1:9998
+    submitOrderUrl: /order/submitOrder
+    updateCancelStatusUrl: /order/updateCancelStatus
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000 #默认熔断1秒

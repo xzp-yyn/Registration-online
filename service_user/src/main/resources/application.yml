@@ -1,0 +1,52 @@
+server:
+  port: ${port:9003}
+spring:
+  application:
+    name: userserver
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/yt_hosp?characterEncoding=UTF-8&serverTimezone=GMT%2B8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 201014
+      filters: stat,wall
+      stat-view-servlet:
+          enabled: true
+          login-username: xzp
+          login-password: 201014
+          web-stat-filter:
+            enabled: true
+            url-pattern: /*
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 64c31488-1828-4537-99a1-29fd7d9401c7
+  redis:
+    host: 192.168.107.214
+    port: 6379
+    database: 1
+    password: 201014
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 350MB
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: assign_id
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000 #默认熔断1秒
+yt:
+  cardimg: D:\yt_parent\service_user\src\main\resources\static\images\
