@@ -1,0 +1,867 @@
+2022-11-03 08:53:00.413  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 08:53:00.482  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 08:53:00.566  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 08:53:00.930  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 08:53:00.945  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 08:53:00.945  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 08:53:01.068  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 08:53:01.068  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1525 ms
+2022-11-03 08:53:01.199  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 08:53:01.315  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-03 08:53:02.509  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 08:53:02.556  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 08:53:02.556  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 08:53:02.556  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 08:53:02.556  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 08:53:02.891  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 08:53:02.891  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 08:53:02.891  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 08:53:02.910  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 08:53:03.527  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 08:53:03.543  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 08:53:03.596  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 08:53:03.596  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 08:53:03.612  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 08:53:03.612  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 08:59:53.823  INFO 80632 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-03 08:59:53.823  INFO 80632 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-03 08:59:53.831  INFO 80632 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-11-03 09:08:01.188  INFO 80632 --- [Thread-8] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 09:08:01.188  INFO 80632 --- [Thread-8] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 09:08:01.188  INFO 80632 --- [Thread-8] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 09:08:01.191  INFO 80632 --- [Thread-8] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 09:08:01.199  INFO 80632 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-03 09:08:01.207  INFO 80632 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-03 09:08:04.200  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 09:08:04.224  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 09:08:04.240  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 09:08:04.344  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 09:08:04.344  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 09:08:04.344  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 09:08:04.376  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 09:08:04.376  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 917 ms
+2022-11-03 09:08:04.424  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 09:08:04.440  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-11-03 09:08:04.936  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 09:08:04.936  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 09:08:04.936  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 09:08:05.168  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 09:08:05.168  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 09:08:05.168  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 09:08:05.168  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 09:08:05.454  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 09:08:05.454  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 09:08:05.454  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 09:08:05.469  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 09:08:05.469  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 09:08:05.469  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 09:08:05.469  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 09:08:20.628  INFO 80632 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-03 09:08:20.628  INFO 80632 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-03 09:08:20.636  INFO 80632 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-11-03 10:02:50.512  INFO 80632 --- [Thread-27] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:02:50.522  INFO 80632 --- [Thread-27] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:02:50.523  INFO 80632 --- [Thread-27] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:02:50.531  INFO 80632 --- [Thread-27] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:02:50.549  INFO 80632 --- [Thread-27] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-11-03 10:02:50.552  INFO 80632 --- [Thread-27] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-11-03 10:02:55.666 ERROR 80632 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:469) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:131) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.xzp.ServiceCmnApplication.main(ServiceCmnApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.xzp.service.impl.DictServiceImpl] for bean with name 'dictServiceImpl' defined in file [D:\yt_parent\service_cmn\target\classes\com\xzp\service\impl\DictServiceImpl.class]; nested exception is java.lang.ClassNotFoundException: com.xzp.service.impl.DictServiceImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1477) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:682) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:485) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$DevToolsDataSourceCondition.getMatchOutcome(DevToolsDataSourceAutoConfiguration.java:183) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.xzp.service.impl.DictServiceImpl
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:282) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:456) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1542) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1469) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 30 common frames omitted
+
+2022-11-03 10:02:55.671  WARN 80632 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.xzp.service.impl.DictServiceImpl] for bean with name 'dictServiceImpl' defined in file [D:\yt_parent\service_cmn\target\classes\com\xzp\service\impl\DictServiceImpl.class]; nested exception is java.lang.ClassNotFoundException: com.xzp.service.impl.DictServiceImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1477) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:682) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:520) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:491) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:613) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:605) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1242) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:869) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:857) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:844) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:795) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.xzp.ServiceCmnApplication.main(ServiceCmnApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: java.lang.ClassNotFoundException: com.xzp.service.impl.DictServiceImpl
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:282) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:456) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1542) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1469) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 21 common frames omitted
+
+2022-11-03 10:06:33.415  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:06:33.432  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:06:33.456  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:06:33.540  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:06:33.540  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:06:33.541  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:06:33.570  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:06:33.570  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 643 ms
+2022-11-03 10:06:33.612  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:06:33.637  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-11-03 10:06:34.943  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:06:34.956  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:06:34.956  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:06:35.236  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:06:35.236  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:06:35.236  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:06:35.247  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:06:35.656  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:06:35.657  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:06:35.658  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:06:35.662  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:06:35.664  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:06:35.664  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:06:35.665  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:07:06.080  INFO 80632 --- [Thread-50] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:07:06.082  INFO 80632 --- [Thread-50] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:07:06.082  INFO 80632 --- [Thread-50] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:07:06.085  INFO 80632 --- [Thread-50] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:07:06.088  INFO 80632 --- [Thread-50] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2022-11-03 10:07:06.088  INFO 80632 --- [Thread-50] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2022-11-03 10:07:08.380  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:07:08.391  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:07:08.412  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:07:08.479  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:07:08.480  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:07:08.480  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:07:08.507  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:07:08.507  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 621 ms
+2022-11-03 10:07:08.561  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:07:08.575  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2022-11-03 10:07:09.528  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:07:09.549  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:07:09.549  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:07:09.874  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:07:09.874  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:07:09.874  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:07:09.877  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:07:10.247  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:07:10.248  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:07:10.248  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:07:10.251  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:07:10.253  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:07:10.253  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:07:10.254  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:12:50.207  INFO 80632 --- [Thread-74] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:12:50.208  INFO 80632 --- [Thread-74] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:12:50.208  INFO 80632 --- [Thread-74] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:12:50.211  INFO 80632 --- [Thread-74] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:12:50.214  INFO 80632 --- [Thread-74] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+2022-11-03 10:12:50.215  INFO 80632 --- [Thread-74] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2022-11-03 10:12:52.427  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4f54934e-8a07-348d-bafd-af0ddf976fec
+2022-11-03 10:12:52.449  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:12:52.575  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:12:52.577  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:12:52.578  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:12:52.681  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:12:52.681  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 890 ms
+2022-11-03 10:12:52.757  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:12:52.794  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2022-11-03 10:12:54.476  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:12:54.476  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:12:54.612  INFO 80632 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-03 10:12:56.734  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:12:56.735  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:12:56.735  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:12:56.740  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:12:56.839  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:12:58.207  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:12:58.209  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:12:58.209  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:12:58.212  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:12:58.242  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:12:58.242  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:12:58.247  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-11-03 10:12:58.415  INFO 80632 --- [Thread-102] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:12:58.416  INFO 80632 --- [Thread-102] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:12:58.416  INFO 80632 --- [Thread-102] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:12:58.425  INFO 80632 --- [Thread-102] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:12:58.425  INFO 80632 --- [Thread-102] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-03 10:12:58.426  INFO 80632 --- [Thread-102] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closing ...
+2022-11-03 10:12:58.426  INFO 80632 --- [Thread-102] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2022-11-03 10:13:00.710  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:13:00.730  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:13:00.768  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:13:00.916  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:13:00.917  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:13:00.918  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:13:00.993  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:13:00.993  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1004 ms
+2022-11-03 10:13:01.133  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:13:01.248  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2022-11-03 10:13:02.593  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:13:02.606  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:13:02.606  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:13:02.902  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:13:02.902  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:13:02.902  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:13:02.905  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:13:03.272  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:13:03.273  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:13:03.273  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:13:03.275  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:13:03.278  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:13:03.278  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:13:03.279  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringfoxWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   Swagger2ControllerWebMvc matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   Swagger2WebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   WebMvcRequestHandlerProvider matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+
+Negative matches:
+-----------------
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper:
+      Did not match:
+         - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found beans of type 'com.fasterxml.jackson.databind.ObjectMapper' optimizationObjectMapper (OnBeanCondition)
+
+   SpringfoxWebFluxConfiguration:
+      Did not match:
+         - did not find reactive web application classes (OnWebApplicationCondition)
+
+   Swagger2ControllerWebFlux:
+      Did not match:
+         - did not find reactive web application classes (OnWebApplicationCondition)
+
+   Swagger2WebFluxConfiguration:
+      Did not match:
+         - did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebFluxRequestHandlerProvider:
+      Did not match:
+         - did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport' webMvcConfig (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-11-03 10:21:18.446  INFO 80632 --- [Thread-117] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:21:18.447  INFO 80632 --- [Thread-117] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:21:18.448  INFO 80632 --- [Thread-117] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:21:18.459  INFO 80632 --- [Thread-117] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:21:18.461  INFO 80632 --- [Thread-117] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closing ...
+2022-11-03 10:21:18.461  INFO 80632 --- [Thread-117] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2022-11-03 10:21:21.800  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4f54934e-8a07-348d-bafd-af0ddf976fec
+2022-11-03 10:21:21.816  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:21:21.924  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:21:21.926  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:21:21.927  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:21:21.967  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:21:21.967  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 542 ms
+2022-11-03 10:21:22.008  WARN 80632 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dictController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.xzp.controller.DictController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2e5c8be2]
+2022-11-03 10:21:22.009  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-03 10:21:22.020  INFO 80632 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-03 10:21:22.024 ERROR 80632 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dictController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.xzp.controller.DictController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2e5c8be2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1286) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.xzp.ServiceCmnApplication.main(ServiceCmnApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xzp.controller.DictController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2e5c8be2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/xzp/result/Result
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.xzp.result.Result
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+
+2022-11-03 10:23:04.052  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:23:04.073  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:23:04.120  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:23:04.271  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:23:04.272  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:23:04.272  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:23:04.310  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:23:04.310  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1044 ms
+2022-11-03 10:23:04.423  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:23:04.521  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2022-11-03 10:23:05.510  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:23:05.534  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:23:05.534  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:23:05.982  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:23:05.982  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:23:05.982  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:23:05.987  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:23:06.901  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:23:06.948  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:23:06.948  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:23:06.953  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:23:06.957  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:23:06.957  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:23:06.958  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:25:40.525  INFO 80632 --- [Thread-146] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:25:40.530  INFO 80632 --- [Thread-146] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:25:40.530  INFO 80632 --- [Thread-146] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:25:40.536  INFO 80632 --- [Thread-146] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:25:40.539  INFO 80632 --- [Thread-146] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closing ...
+2022-11-03 10:25:40.540  INFO 80632 --- [Thread-146] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2022-11-03 10:25:44.829  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:25:44.852  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:25:44.886  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:25:44.987  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:25:44.988  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:25:44.988  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:25:45.030  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:25:45.031  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1131 ms
+2022-11-03 10:25:45.092  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:25:45.107  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2022-11-03 10:25:46.685  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:25:46.707  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:25:46.707  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:25:47.217  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:25:47.217  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:25:47.217  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:25:47.227  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:25:48.156  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:25:48.157  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:25:48.157  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:25:48.162  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:25:48.165  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:25:48.165  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:25:48.166  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:25:59.048  INFO 80632 --- [Thread-174] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:25:59.049  INFO 80632 --- [Thread-174] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:25:59.049  INFO 80632 --- [Thread-174] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:25:59.069  INFO 80632 --- [Thread-174] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:25:59.071  INFO 80632 --- [Thread-174] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closing ...
+2022-11-03 10:25:59.072  INFO 80632 --- [Thread-174] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2022-11-03 10:26:01.649  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:26:01.689  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:26:01.737  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:26:01.836  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:26:01.837  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:26:01.837  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:26:01.881  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:26:01.881  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1004 ms
+2022-11-03 10:26:01.949  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:26:01.970  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2022-11-03 10:26:03.144  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:26:03.168  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:26:03.168  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:26:03.561  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:26:03.561  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:26:03.561  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:26:03.566  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:26:04.121  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:26:04.122  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:26:04.122  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:26:04.132  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:26:04.135  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:26:04.135  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:26:04.136  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:33:32.466  INFO 80632 --- [Thread-191] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:33:32.469  INFO 80632 --- [Thread-191] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:33:32.469  INFO 80632 --- [Thread-191] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:33:32.484  INFO 80632 --- [Thread-191] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:33:32.536  INFO 80632 --- [Thread-191] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closing ...
+2022-11-03 10:33:32.537  INFO 80632 --- [Thread-191] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2022-11-03 10:33:35.538  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:33:35.549  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:33:35.565  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:33:35.683  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:33:35.683  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:33:35.683  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:33:35.710  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:33:35.710  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 928 ms
+2022-11-03 10:33:35.756  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:33:35.771  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2022-11-03 10:33:36.659  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:33:36.680  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:33:36.680  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:33:37.021  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:33:37.021  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:33:37.021  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:33:37.028  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:33:37.563  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:33:37.564  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:33:37.565  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:33:37.575  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:33:37.578  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:33:37.578  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:33:37.579  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:37:57.366  INFO 80632 --- [Thread-221] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:37:57.375  INFO 80632 --- [Thread-221] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:37:57.375  INFO 80632 --- [Thread-221] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:37:57.384  INFO 80632 --- [Thread-221] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:37:57.416  INFO 80632 --- [Thread-221] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closing ...
+2022-11-03 10:37:57.417  INFO 80632 --- [Thread-221] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2022-11-03 10:38:01.469  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:38:01.480  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:38:01.498  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:38:01.550  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:38:01.551  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:38:01.551  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:38:01.570  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:38:01.570  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 514 ms
+2022-11-03 10:38:01.594  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:38:01.602  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+2022-11-03 10:38:02.115  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:38:02.125  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:38:02.125  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:38:02.343  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:38:02.343  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:38:02.343  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:38:02.346  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:38:02.651  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:38:02.652  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:38:02.652  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:38:02.654  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:38:02.656  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:38:02.657  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:38:02.657  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:40:37.264  INFO 80632 --- [Thread-244] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:40:37.268  INFO 80632 --- [Thread-244] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:40:37.269  INFO 80632 --- [Thread-244] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:40:37.273  INFO 80632 --- [Thread-244] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:40:37.275  INFO 80632 --- [Thread-244] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closing ...
+2022-11-03 10:40:37.276  INFO 80632 --- [Thread-244] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+2022-11-03 10:40:42.084  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:40:42.092  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:40:42.106  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:40:42.148  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:40:42.149  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:40:42.149  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:40:42.171  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:40:42.171  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 734 ms
+2022-11-03 10:40:42.207  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:40:42.222  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+2022-11-03 10:40:42.716  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:40:42.728  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:40:42.728  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:40:42.974  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:40:42.974  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:40:42.974  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:40:42.977  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:40:43.274  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:40:43.275  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:40:43.275  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:40:43.277  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:40:43.279  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:40:43.279  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:40:43.279  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:41:40.165  INFO 80632 --- [Thread-266] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:41:40.166  INFO 80632 --- [Thread-266] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:41:40.166  INFO 80632 --- [Thread-266] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:41:40.170  INFO 80632 --- [Thread-266] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:41:40.172  INFO 80632 --- [Thread-266] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closing ...
+2022-11-03 10:41:40.172  INFO 80632 --- [Thread-266] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closed
+2022-11-03 10:41:42.662  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:41:42.685  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:41:42.708  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:41:42.790  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:41:42.790  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:41:42.791  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:41:42.827  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:41:42.827  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1177 ms
+2022-11-03 10:41:42.867  WARN 80632 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dictController': Unsatisfied dependency expressed through field 'dictService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dictServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.xzp.service.impl.DictServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@58b07fe7]
+2022-11-03 10:41:42.867  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-03 10:41:42.875  INFO 80632 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-03 10:41:42.879 ERROR 80632 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dictController': Unsatisfied dependency expressed through field 'dictService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dictServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.xzp.service.impl.DictServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@58b07fe7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at com.xzp.ServiceCmnApplication.main(ServiceCmnApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dictServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.xzp.service.impl.DictServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@58b07fe7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1286) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.xzp.service.impl.DictServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@58b07fe7]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 36 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/xzp/model/dict/Dict
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.xzp.model.dict.Dict
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 42 common frames omitted
+
+2022-11-03 10:41:47.049  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:41:47.057  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:41:47.070  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:41:47.110  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:41:47.111  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:41:47.111  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:41:47.130  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:41:47.130  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 399 ms
+2022-11-03 10:41:47.154  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:41:47.162  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} inited
+2022-11-03 10:41:47.662  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:41:47.672  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:41:47.672  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:41:47.891  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:41:47.891  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:41:47.891  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:41:47.894  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:41:48.183  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:41:48.183  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:41:48.183  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:41:48.255  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:41:48.259  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:41:48.260  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:41:48.260  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 10:42:25.650  INFO 80632 --- [Thread-285] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 10:42:25.652  INFO 80632 --- [Thread-285] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 10:42:25.652  INFO 80632 --- [Thread-285] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 10:42:25.668  INFO 80632 --- [Thread-285] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 10:42:25.671  INFO 80632 --- [Thread-285] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closing ...
+2022-11-03 10:42:25.671  INFO 80632 --- [Thread-285] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closed
+2022-11-03 10:42:29.430  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 10:42:29.452  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 10:42:29.615  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 10:42:29.702  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 10:42:29.703  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 10:42:29.703  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 10:42:29.735  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 10:42:29.735  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1008 ms
+2022-11-03 10:42:29.796  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 10:42:29.808  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} inited
+2022-11-03 10:42:30.576  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 10:42:30.595  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 10:42:30.595  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 10:42:30.866  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:42:30.866  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 10:42:30.866  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 10:42:30.869  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 10:42:31.211  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 10:42:31.212  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 10:42:31.212  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 10:42:31.216  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 10:42:31.219  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 10:42:31.219  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 10:42:31.221  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 11:00:18.817  INFO 80632 --- [Thread-311] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 11:00:18.819  INFO 80632 --- [Thread-311] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 11:00:18.820  INFO 80632 --- [Thread-311] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 11:00:18.839  INFO 80632 --- [Thread-311] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 11:00:18.845  INFO 80632 --- [Thread-311] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closing ...
+2022-11-03 11:00:18.847  INFO 80632 --- [Thread-311] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closed
+2022-11-03 11:00:22.541  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 11:00:22.585  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 11:00:22.677  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 11:00:22.843  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 11:00:22.844  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 11:00:22.844  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 11:00:22.882  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 11:00:22.882  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1265 ms
+2022-11-03 11:00:22.929  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 11:00:22.947  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} inited
+2022-11-03 11:00:23.711  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 11:00:23.725  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 11:00:23.726  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 11:00:24.201  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 11:00:24.201  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 11:00:24.201  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 11:00:24.207  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 11:00:24.845  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 11:00:24.847  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 11:00:24.847  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 11:00:24.883  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 11:00:24.886  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 11:00:24.887  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 11:00:24.888  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 11:00:33.818  INFO 80632 --- [Thread-342] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 11:00:33.819  INFO 80632 --- [Thread-342] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 11:00:33.819  INFO 80632 --- [Thread-342] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 11:00:33.823  INFO 80632 --- [Thread-342] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 11:00:33.825  INFO 80632 --- [Thread-342] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closing ...
+2022-11-03 11:00:33.826  INFO 80632 --- [Thread-342] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closed
+2022-11-03 11:00:36.877  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 11:00:36.890  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dbe94066-9fdc-3ce0-97bc-471c07c23afe
+2022-11-03 11:00:36.907  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 11:00:36.956  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 11:00:36.956  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 11:00:36.956  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 11:00:36.977  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 11:00:36.977  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 818 ms
+2022-11-03 11:00:37.010  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 11:00:37.020  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} inited
+2022-11-03 11:00:37.507  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 11:00:37.521  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 11:00:37.521  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 11:00:37.763  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 11:00:37.763  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 11:00:37.763  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 11:00:37.767  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 11:00:38.096  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 11:00:38.096  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 11:00:38.096  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 11:00:38.101  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 11:00:38.103  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 11:00:38.103  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 11:00:38.103  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 11:03:14.745  INFO 80632 --- [Thread-358] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-11-03 11:03:14.746  INFO 80632 --- [Thread-358] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@cmnserver:10.50.176.104:9002 from beat map.
+2022-11-03 11:03:14.746  INFO 80632 --- [Thread-358] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 deregistering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{},"port":9002,"weight":1.0}
+2022-11-03 11:03:14.749  INFO 80632 --- [Thread-358] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-11-03 11:03:14.751  INFO 80632 --- [Thread-358] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closing ...
+2022-11-03 11:03:14.752  INFO 80632 --- [Thread-358] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closed
+2022-11-03 11:03:19.413  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-11-03 11:03:19.414  WARN 80632 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.mapper]' package. Please check your configuration.
+2022-11-03 11:03:19.447  INFO 80632 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=92ccdb76-0f6f-3c0b-85cc-67a68450693a
+2022-11-03 11:03:19.469  INFO 80632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$30089e8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-03 11:03:19.593  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-03 11:03:19.594  INFO 80632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 11:03:19.595  INFO 80632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-03 11:03:19.646  INFO 80632 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-03 11:03:19.646  INFO 80632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1107 ms
+2022-11-03 11:03:19.840  INFO 80632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-03 11:03:19.858  WARN 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-03 11:03:19.859  INFO 80632 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-03 11:03:20.250  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 11:03:20.251  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-11-03 11:03:20.251  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-11-03 11:03:20.257  INFO 80632 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-11-03 11:03:20.264  INFO 80632 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-03 11:03:20.279  INFO 80632 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} inited
+2022-11-03 11:03:21.369  INFO 80632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-03 11:03:21.370  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.50.176.104","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9002,"scheduled":false,"serviceName":"DEFAULT_GROUP@@cmnserver","stopped":false,"weight":1.0} to beat map.
+2022-11-03 11:03:21.370  INFO 80632 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 64c31488-1828-4537-99a1-29fd7d9401c7 registering service DEFAULT_GROUP@@cmnserver with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.50.176.104","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9002,"weight":1.0}
+2022-11-03 11:03:21.376  INFO 80632 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, cmnserver 10.50.176.104:9002 register finished
+2022-11-03 11:03:21.378  INFO 80632 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [subscribe] cmnserver.yml+DEFAULT_GROUP+64c31488-1828-4537-99a1-29fd7d9401c7
+2022-11-03 11:03:21.378  INFO 80632 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-127.0.0.1_8852-127.0.0.1_8850-64c31488-1828-4537-99a1-29fd7d9401c7] [add-listener] ok, tenant=64c31488-1828-4537-99a1-29fd7d9401c7, dataId=cmnserver.yml, group=DEFAULT_GROUP, cnt=1
+2022-11-03 11:03:21.379  INFO 80632 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-03 11:19:36.758  INFO 80632 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-03 11:19:36.759  INFO 80632 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-03 11:19:36.782  INFO 80632 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms

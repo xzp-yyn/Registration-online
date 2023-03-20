@@ -1,0 +1,14 @@
+2022-10-28 08:55:07.317  WARN 72576 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-28 08:55:07.804  INFO 72576 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-28 08:55:08.084  INFO 72576 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-28 08:55:09.563  INFO 72576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-28 08:55:11.694  INFO 72576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-28 08:55:11.702  INFO 72576 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-28 08:55:11.702  INFO 72576 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-28 09:02:13.360  WARN 64196 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-28 09:02:14.194  INFO 64196 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-28 09:02:14.535  INFO 64196 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-28 09:02:15.920  INFO 64196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-28 09:02:17.841  INFO 64196 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-28 09:02:17.841  INFO 64196 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-28 09:02:17.841  INFO 64196 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

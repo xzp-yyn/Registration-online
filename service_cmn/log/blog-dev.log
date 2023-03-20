@@ -1,0 +1,25 @@
+2022-10-30 10:17:50.806  WARN 72296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-30 10:17:51.467  INFO 72296 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-30 10:17:51.670  INFO 72296 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-30 10:17:54.101  INFO 72296 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-30 10:17:54.101  INFO 72296 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-30 10:19:23.635  WARN 79948 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-30 10:19:24.338  INFO 79948 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-30 10:19:24.698  INFO 79948 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-30 10:19:26.865  INFO 79948 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-30 10:19:26.865  INFO 79948 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-30 10:20:29.436  WARN 86988 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-30 10:20:29.952  INFO 86988 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-30 10:20:30.186  INFO 86988 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-30 10:20:58.761  INFO 86988 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-30 10:20:58.764  INFO 86988 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-30 10:22:32.500  WARN 72076 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-30 10:22:33.197  INFO 72076 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-30 10:22:33.478  INFO 72076 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-30 10:23:01.456  INFO 72076 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-30 10:23:01.456  INFO 72076 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-30 10:24:16.842  WARN 58932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.xzp.mapper]' package. Please check your configuration.
+2022-10-30 10:24:17.701  INFO 58932 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-30 10:24:18.054  INFO 58932 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-30 10:24:21.230  INFO 58932 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-30 10:24:21.235  INFO 58932 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

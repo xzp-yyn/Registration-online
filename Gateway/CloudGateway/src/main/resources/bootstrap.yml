@@ -1,0 +1,35 @@
+server:
+  port: ${port:80}
+spring:
+  application:
+    name: cloudgateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: hospserver
+          uri: lb://hospserver
+          predicates:
+            - Path=/admin/hosp/**,/api/hospapi/**
+        - id: cmnserver
+          uri: lb://cmnserver
+          predicates:
+            - Path=/admin/cmn/**
+        - id: userserver
+          uri: lb://userserver
+          predicates:
+            - Path=/api/user/**,/api/patient/**,/admin/user/**
+        - id: orderserver
+          uri: lb://orderserver
+          predicates:
+            - Path=/api/order/auth/**,/admin/order/**
+        - id: dataserver
+          uri: lb://dataserver
+          predicates:
+            - Path=/admin/statisdata/**
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 64c31488-1828-4537-99a1-29fd7d9401c7
